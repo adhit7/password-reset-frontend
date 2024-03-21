@@ -99,7 +99,7 @@ const Register = () => {
       <Link to='/login'>
         {' '}
         <Button
-          // disabled={isLoading}
+          disabled={isLoading}
           type='submit'
           variant='outline-primary'
           className='my-2 w-100 fs-5'
@@ -107,8 +107,6 @@ const Register = () => {
           Login
         </Button>
       </Link>
-
-      {/* {isLoading && <Loader />} */}
     </FormContainer>
   );
 };

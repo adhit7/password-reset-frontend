@@ -71,7 +71,7 @@ const Login = () => {
         </Row>
 
         <Button
-          // disabled={isLoading}
+          disabled={isLoading}
           type='submit'
           variant='primary'
           className='my-2 w-100 fs-5'
@@ -91,8 +91,6 @@ const Login = () => {
           Register
         </Button>
       </Link>
-
-      {/* {isLoading && <Loader />} */}
     </FormContainer>
   );
 };

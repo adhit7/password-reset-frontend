@@ -53,7 +53,7 @@ const ForgotPassword = () => {
       <Link to='/login'>
         {' '}
         <Button
-          // disabled={isLoading}
+          disabled={isLoading}
           type='submit'
           className='my-2 w-100 fs-6 text-primary'
           style={{ backgroundColor: 'transparent', border: '0' }}
