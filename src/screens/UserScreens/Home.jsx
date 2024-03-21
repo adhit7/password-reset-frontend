@@ -21,8 +21,8 @@ const Home = () => {
           <Card className='p-4 d-flex flex-column align-items-center hero-card bg-light w-75'>
             <h1 className='text-center mb-4'>Password Forgot</h1>
             <p className='text-center mb-4'>
-              This is a boilerplate for Password Forgot Flow, You can register
-              new user and login with given details.
+              This is a Password Forgot Flow, You can register new user and
+              login with given details.
             </p>
           </Card>
         </Container>
