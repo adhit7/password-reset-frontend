@@ -1,6 +1,6 @@
 # Password Reset
 
-I have used mockapi.io to create api and made all the CRUD operations about the user details.
+You can register, login and the forgot password flow functionalities are implemented in it.
 
 Home Page
 ![Home Page](https://github.com/itzadhi/password-reset-frontend/assets/72742240/8ad4cd5d-c83d-4c6d-aacb-f74b155d0839)
