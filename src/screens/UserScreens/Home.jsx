@@ -22,8 +22,7 @@ const Home = () => {
             <h1 className='text-center mb-4'>Password Forgot</h1>
             <p className='text-center mb-4'>
               This is a boilerplate for Password Forgot Flow, You can register
-              new user and login with given details. It is MERN boilerplate
-              project for authentication.
+              new user and login with given details.
             </p>
           </Card>
         </Container>
