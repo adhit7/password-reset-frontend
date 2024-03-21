@@ -1,10 +1,9 @@
 import { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import { Form, Button, Row, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import { Form, Button } from 'react-bootstrap';
 import FormContainer from '../../components/FormContainer';
 import ErrorBox from '../../components/ErrorBox';
 import { useRegisterMutation } from '../../slices/userApiSlice';
-import { toast } from 'react-toastify';
 import { useDispatch } from 'react-redux';
 import { setCredentials } from '../../slices/authSlice';
 
