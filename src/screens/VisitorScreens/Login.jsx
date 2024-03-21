@@ -20,6 +20,7 @@ const Login = () => {
   const submitHandler = async (e) => {
     setError('');
     e.preventDefault();
+
     try {
       const res = await login({ userName, password }).unwrap();
 
@@ -42,6 +43,7 @@ const Login = () => {
             placeholder='Enter your email id before @, user@gmail.com as user'
             value={userName}
             onChange={(e) => setUserName(e.target.value)}
+            required={true}
           ></Form.Control>
         </Form.Group>
 
@@ -52,6 +54,7 @@ const Login = () => {
             placeholder='Enter password'
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            required={true}
           ></Form.Control>
         </Form.Group>
 

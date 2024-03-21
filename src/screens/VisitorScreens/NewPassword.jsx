@@ -29,19 +29,14 @@ const NewPassword = () => {
   //then chenges the checkTempPassword to true where shows new password form
   const tempPasswordHandler = async (e) => {
     e.preventDefault();
-    if (tempToken.length === 0) {
-      toast.error('Please enter the temporary password', {
-        position: 'top-right',
-      });
-    } else {
-      try {
-        const res = await tempPassword(tempToken).unwrap();
-        toast.success(res?.message, { position: 'top-right' });
-        dispatch(setTempPasswordStatus(true));
-      } catch (err) {
-        toast.error(err?.data?.message || err.error, { position: 'top-right' });
-        console.log(err?.data?.message || err.error);
-      }
+
+    try {
+      const res = await tempPassword(tempToken).unwrap();
+      toast.success(res?.message, { position: 'top-right' });
+      dispatch(setTempPasswordStatus(true));
+    } catch (err) {
+      toast.error(err?.data?.message || err.error, { position: 'top-right' });
+      console.log(err?.data?.message || err.error);
     }
   };
 
@@ -79,6 +74,7 @@ const NewPassword = () => {
               placeholder='Enter password'
               value={password}
               onChange={(e) => setPassword(e.target.value)}
+              required={true}
             ></Form.Control>
           </Form.Group>
           <Form.Group className='my-2' controlId='password'>
@@ -88,6 +84,7 @@ const NewPassword = () => {
               placeholder='Confirm your password'
               value={confirmPassword}
               onChange={(e) => setConfirmPassword(e.target.value)}
+              required={true}
             ></Form.Control>
           </Form.Group>
 
@@ -109,6 +106,7 @@ const NewPassword = () => {
               placeholder='Enter password'
               value={tempToken}
               onChange={(e) => setTempToken(e.target.value)}
+              required={true}
             ></Form.Control>
           </Form.Group>
 

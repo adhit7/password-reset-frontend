@@ -12,6 +12,7 @@ const ForgotPassword = () => {
 
   const submitHandler = async (e) => {
     e.preventDefault();
+
     try {
       const res = await forgotPassword({ email }).unwrap();
       console.log('a', res);
@@ -35,6 +36,7 @@ const ForgotPassword = () => {
             placeholder='Enter email'
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            required={true}
           ></Form.Control>
         </Form.Group>
 
