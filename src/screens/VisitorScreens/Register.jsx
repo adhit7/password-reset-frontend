@@ -49,6 +49,7 @@ const Register = () => {
             placeholder='Enter first name'
             value={firstName}
             onChange={(e) => setFirstName(e.target.value)}
+            required={true}
           ></Form.Control>
         </Form.Group>
 
@@ -59,6 +60,7 @@ const Register = () => {
             placeholder='Enter last name'
             value={lastName}
             onChange={(e) => setLastName(e.target.value)}
+            required={true}
           ></Form.Control>
         </Form.Group>
 
@@ -69,6 +71,7 @@ const Register = () => {
             placeholder='Enter email'
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            required={true}
           ></Form.Control>
         </Form.Group>
 
@@ -79,6 +82,7 @@ const Register = () => {
             placeholder='Enter password'
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            required={true}
           ></Form.Control>
         </Form.Group>
 
