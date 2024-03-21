@@ -1,4 +1,4 @@
-# User Records
+# Password Reset
 
 I have used mockapi.io to create api and made all the CRUD operations about the user details.
 
