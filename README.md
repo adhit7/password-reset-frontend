@@ -1,6 +1,7 @@
 # Password Reset
 
-It is a MERN project where you can register, login and the forgot password flow functionalities are implemented in it.
+It is a MERN project where you can register, login and the forgot password flow functionalities are implemented in it.<br >
+Backend repo - https://github.com/itzadhi/password-reset-backend
 
 
 ## Local Setup
