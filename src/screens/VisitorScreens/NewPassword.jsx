@@ -42,6 +42,7 @@ const NewPassword = () => {
 
   //Setting new password
   const setNewPasswordHandler = async (e) => {
+    setError('');
     e.preventDefault();
     if (password !== confirmPassword) {
       setError('Both password are not same');

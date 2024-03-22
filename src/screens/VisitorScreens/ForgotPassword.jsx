@@ -15,7 +15,6 @@ const ForgotPassword = () => {
 
     try {
       const res = await forgotPassword({ email }).unwrap();
-      console.log('a', res);
       toast.success(res?.message, {
         position: 'top-right',
       });
